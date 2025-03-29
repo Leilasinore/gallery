@@ -12,7 +12,7 @@ pipeline{
                 sh "npm install"
             }
         }
-         stage("building project"){
+         stage("building"){
             steps{
                 sh "npm run build"
             }
