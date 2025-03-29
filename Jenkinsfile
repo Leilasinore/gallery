@@ -12,6 +12,10 @@ pipeline{
                 sh "npm install"
             }
         }
-        
+         stage("building"){
+            steps{
+                sh "npm run build"
+            }
+        }
     }
 }
